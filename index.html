@@ -12,6 +12,74 @@
             <h1 id="header-title">Tic-Tac-Toe</h1>
         </header>
     </header>
+    <div class="container">
+        <div class="game-board" id="game-board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="winning-message" id="winning-message">
+            <div data-winning-message-text></div>
+            <button id='restartButton'>Restart</button>
+        </div>
+        <div class="start-screen show" id='startScreen'>
+            <div class="start-btn" id='PvP'>
+                <div class="start-type">
+                    <p>Player vs. Player</p>
+                </div>
+                <div class="start-images">
+                   <img alt='Person' src='Images/human-facing-right.png' height='70px'>
+                   <img alt='person' src='Images/human-facing-left.png' height='70px'>
+                </div>
+            </div>
+            <div class="start-btn" id='PvAi'>
+                <div class="start-type" id=PvAi>
+                    <p>Player vs. Ai</p>
+                </div>
+                <div class="start-images">
+                    <img alt='Person' src='Images/human-facing-right.png' height='70px'>
+                    <img alt='person' src='Images/human-facing-left.png' height='70px'>
+                    <img class='Ai-brain' alt='Ai' src='Images/ai-cog.png' height='35px'>
+                </div>
+            </div>
+        </div>
+        <div class="player-screen" id='playerScreen'>
+            <div class="player-tile">
+                <form class='player-form' id='form-id'>
+                    <div class="form-container p1-container">
+                        <label for='name' class='label-container' id='p1-name-label'>Player 1 Name</label>
+                        <input type='text' name='name' class='input-container' id='p1-name-input' autocomplete='off' required>
+                    </div>
+                    <div class="form-container p2-container">
+                        <label for='name' class='label-container' id='p2-name-label'>Player 2 Name</label>
+                        <input type='text' name='name' class='input-container' id='p2-name-input' autocomplete='off' required>
+                    </div>
+                    <div class="form-container radio-container" id="radioCheck">
+                        <input type="radio" class="radio-input" id="easy-input" value="easy" name="difficulty-setting">
+                        <label for="easy-input" class="radio-label">Easy AI</label>
+
+                        <input type="radio" class="radio-input" id="medium-input" value="medium" name="difficulty-setting">
+                        <label for="medium-input" class="radio-label">Medium AI</label>
+
+                        <input type="radio" class="radio-input" id="hard-input" value="hard" name="difficulty-setting">
+                        <label for="hard-input" class="radio-label">Hard AI</label>
+                    </div>
+                    <div class="submit-container" id='submit-form'>
+                        <input type='submit' class='submit-button disable-select' value='start'>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer id='main-footer'>
+            <p>Copyright &copy; 2020 ddanner97 Library Project-Odin</p>
+        </footer>
+    </div>
 
 </body>
 <script src='Documents/Tic-Tac-Toe.js'></script>
